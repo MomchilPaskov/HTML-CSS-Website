@@ -1,0 +1,424 @@
+#button {
+    transition: transform 0.2s;
+}
+
+#button:hover {
+    transform: scale(1.2);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to top right, #40E0D0, #008000);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, #40E0D0, #008000);
+    box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    z-index: 1000;
+    display: flex;
+    height: 6em;
+}
+
+.dropbtn {
+    margin-left: 2em;
+    width: 7em;
+    height: 6em;
+    padding: 0.6rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(to bottom left, yellow, skyblue);
+    min-width: 12rem;
+    box-shadow: 0 0.4em 1rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 5%;
+    border-radius: 1.4em;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.4em 0;
+    font-size: 1.7em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 1.4em;
+}
+
+.show {
+    display: block;
+}
+
+/* ===== HERO IMAGE ===== */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/blog_Background1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* ===== Title ===== */
+.Title {
+    display: Inline-block;
+    text-align: center;
+    font-size: 4em;
+    color: #222;
+    margin: 1em 0 0.5em 0;
+    font-weight: bold;
+    background-image: linear-gradient(to top right, #40E0D0, #CCFF33);
+    padding: 0.2em 1em;
+    border-radius: 1em;
+    box-shadow: 0.4em 0.4em 1rem rgba(0,0,0,0.6);
+}
+
+
+
+
+/* ===== INFO BOX ===== */
+.InfoBox1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    width: 60%;
+    margin: 2em auto;
+    background-image:linear-gradient(to top right, #CCFF33, #008000);
+    border-radius: 5em;
+    box-shadow: 0.4em 0.4em 1rem rgba(0,0,0,0.6);
+    padding: 2em;
+    flex-wrap: nowrap;
+    
+}
+
+/* --- СНИМКАТА --- */
+.MyImg {
+    width: 100%;
+    max-width: 23em;
+    height: auto;
+    border-radius: 1.3em;
+    object-fit: cover;
+    
+}
+
+/* --- ТЕКСТЪТ --- */
+.AboutMe {
+    line-height: 1.6;
+    font-size: 1.8;
+    text-align: left;
+    color: #222;
+}
+
+/* ===== 3 BOXES ===== */
+
+.boxes {
+    display: block;
+    margin: 3em 0 0 0;
+    align-items: center;
+}
+
+.Box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    gap: 3em;
+    width: 30%;
+    max-height: 11em;
+    margin: 2% auto 3% auto;
+    background-image:linear-gradient(to top, #CCFF33, #008000);
+    border-radius: 2em;
+    
+    padding: 1.5em;
+    flex-wrap: nowrap;
+    box-shadow:0.6em 0.6em 1rem rgba(0,0,0,0.6);
+}
+
+.Box2 {
+    display: inline-block;
+    width: 30%;
+    max-height: 11em;
+    background-image:linear-gradient(to bottom left, #CCFF33, #008000);
+    border-radius: 2em;
+    padding: 1.5em;
+    flex-wrap: nowrap;
+    margin: auto 2% auto auto;
+    box-shadow: 0.6em 0.6em 1rem rgba(0,0,0,0.6);
+}
+
+.Box3 {
+    display: inline-block;
+    width: 30%;
+    max-height: 11em;
+    
+    background-image:linear-gradient(to bottom right, #CCFF33, #008000);
+    border-radius: 2em;
+    padding: 1.5em;
+    margin: auto auto auto 2%;
+    box-shadow: 0.6em 0.6em 1rem rgba(0,0,0,0.6);
+}
+
+.Bottom2Boxes {
+    margin-top: 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    padding: 1em;
+    background-image: linear-gradient(to top right, #40E0D0, #008000);
+    color: black;
+    box-shadow: 0 -0.4em 1rem 0 rgba(0,0,0,0.2);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    margin-top: 3em;
+    min-height: 14%;
+}
+
+.Footer-Left {
+    float: left;
+    margin-left: 2em;
+}
+.footerButtons{
+    text-decoration: none;
+    color: black;
+}
+
+.footerButtons:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.Footer-Right {
+    position: sticky;
+    float: right;
+    margin-right: 2em;
+}
+
+.Footer-Right a {
+    color: black;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.Footer-Right img {
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1600px) {
+    .InfoBox1 {
+        width: 65%;
+        gap: 3.5em;
+    }
+
+    .MyImg {
+        max-width: 23em;
+    }
+
+    .AboutMe {
+        font-size: 1.9em;
+    }
+    .Title {
+        font-size: 4.5em;
+    }
+
+    .Box1, .Box2, .Box3 {
+        width: 32%;
+        gap: 3.5em;
+        max-height: none;
+    }
+
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 1.6em;
+        text-wrap: wrap;
+    }
+    
+}
+@media (max-width: 1400px) {
+    .InfoBox1 {
+        width: 70%;
+        gap: 3em;
+    }
+
+    .MyImg {
+        max-width: 22em;
+    }
+
+    .AboutMe {
+        font-size: 1.5em;
+    }
+    .Title {
+        font-size: 4em;
+    }
+
+    .Box1, .Box2, .Box3 {
+        width: 35%;
+        gap: 3em;
+        max-height: none;
+    }
+
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 1.5em;
+        text-wrap: wrap;
+    }
+    
+}
+
+
+@media (max-width: 1200px) {
+    .InfoBox1 {
+        width: 75%;
+        gap: 2.5em;
+    }
+
+    .MyImg {
+        max-width: 20em;
+    }
+
+    .AboutMe {
+        font-size: 1.3em;
+    }
+    .Title {
+        font-size: 3.5em;
+    }
+    .Box1, .Box2, .Box3 {
+        width: 35%;
+        gap: 2.5em;
+        max-height: none;
+    }
+
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 1.3em;
+        text-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .InfoBox1 {
+        width: 85%;
+        gap: 2em;
+    }
+
+    .MyImg {
+        max-width: 18em;
+    }
+
+    .AboutMe {
+        font-size: 1.1em;
+    }
+    .Title {
+        font-size: 3em;
+    }
+
+    .Box1, .Box2, .Box3 {
+        width: 39%;
+        gap: 2em;
+        max-height: none;
+    }
+
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 1.1em;
+        text-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .InfoBox1 {
+        width: 90%;
+        gap: 1.5em;
+    }
+
+    .MyImg {
+        max-width: 15em;
+    }
+
+    .AboutMe {
+        font-size: 1em;
+    }
+    
+    .Title {
+        font-size: 2.5em;
+    }
+
+    .Box1, .Box2, .Box3 {
+        width: 45%;
+        gap: 1.5em;
+        max-height: none;
+    }
+
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 0.8em;
+        text-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .InfoBox1 {
+        width: 95%;
+        gap: 1em;
+    }
+
+    .MyImg {
+        max-width: 12em;
+    }
+
+    .AboutMe {
+        font-size: 0.9em;
+    }
+    .Title {
+        font-size: 2em;
+    }   
+
+    .Box1, .Box2, .Box3 {
+        width: 35%;
+        max-height: none;
+        gap: 1em;
+        font-size: 0.5em;
+    }
+
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 1.4em;
+        text-wrap: wrap;
+    }
+}
