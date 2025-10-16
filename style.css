@@ -655,5 +655,67 @@ footer {
         align-items: center;
         gap: 1em;
     }
-    
+
+    @media (max-width: 400px) {
+        .InfoBox1 {
+        width: 95%;
+        gap: 1em;
+    }
+    .MyImg {
+        max-width: 10em;
+    }
+    .AboutMe {
+        font-size: 0.7em;
+    }
+    .Title {
+        font-size: 1.8em;
+    }
+    .Box1, .Box2, .Box3 {
+        width: 45%;
+        max-height: none;
+        gap: 1em;
+        font-size: 0.4em;
+    }
+    .Box1_text, .Box2_text, .Box3_text {
+        font-size: 1.2em;
+        text-wrap: wrap;
+    }
+    header {
+        height: 7%;
+    }
+    .dropdown {
+        font-size: 0.4em;
+    }
+    .Map {
+        display: block;
+        height: 19em;
+    }
+    .ContactsTextBox {
+        width: 23.7em;
+        height: 19.2em;
+    }
+    .ContactsTitle {
+        font-size: 2.7em;
+    }
+    .Contacts {
+        font-size: 1.2em;
+    }
+    .ContactsContainer {
+        display: block;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .Footer-Right {
+        float: none;
+        text-align: center;
+        margin: 1em auto 0 auto;
+        font-size: 0.7;
+    }
+    .Footer-Left {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 0.7em;
+}}
 }
