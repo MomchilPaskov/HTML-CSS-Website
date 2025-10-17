@@ -14,7 +14,6 @@ window.onclick = function(event) {
     }
   }
 }
-
 window.addEventListener('scroll', reveal);
 
 function reveal() {
@@ -32,3 +31,4 @@ function reveal() {
     }
   }
 }
+
